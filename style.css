@@ -1,0 +1,110 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.main-container{
+   background-color: #3B4664;
+   width: 100vw;
+   height: 100vh;
+   box-shadow: 0px 4px 4px 0px #00000040;
+   border: 1px solid #0000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+}
+.main-container .calculater{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+}
+.main-container .calculater .title span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    line-height: 1.9 rem;
+    color: #FFFFFF;
+}
+.main-container .calculater .cal-screen{
+    width: 536px;
+    height: 142.73px;
+    gap: 0px;
+    border-radius: 12px;
+    opacity: 0px;
+    background-color: #181F32;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;         
+    
+}
+
+.main-container .calculater .cal-screen span{
+    min-width: 276px;
+    height: 42px; 
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 3.4rem;
+    font-weight: 700;
+    text-align: right;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;  
+    justify-content: end;
+    padding-right: 5%;
+    
+}
+
+.main-container .calculater .board{
+    width: 536px;
+    height: 487px;
+    gap: 0px;
+    border-radius: 12px;
+    background-color: #252D44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .calculater .board .key-board{
+    min-width:466px;
+    min-height:392px;
+    gap: 23px;
+    opacity: 0px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.main-container .calculater .board .key-board .btn{
+    width: 100px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #EAE3DB;
+    font-family:'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36.31px;
+    text-align: center;
+    color: #3B4664;
+    border: none;
+   
+}
+
+.main-container .calculater .board .key-board .delete,.main-container .calculater .board .key-board .reset{
+    font-size: 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #647299;
+    color: #FFFFFF;
+}
+.main-container .calculater .board .key-board .reset
+,.main-container .calculater .board .key-board .equals{
+    grid-column: span 2;
+    width: auto;
+    border-radius: 11.52px;
+    font-size: 23.05px;
+    
+}
+.main-container .calculater .board .key-board .equals{
+    background-color: #D13F30;
+    color: #FFFFFF;
+}
